@@ -6,8 +6,18 @@ import Footer from './components/Footer.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import VisionMissionPage from './pages/VisionMissionPage.jsx';
+
 import FutureReadySchoolPage from './pages/FutureReadySchoolPage.jsx';
 import StudentSuccessPage from './pages/StudentSuccessPage.jsx';
+import PsychometricPage from './pages/PsychometricPage.jsx';
+import ScholarshipsPage from './pages/ScholarshipsPage.jsx';
+import OnlineTuitionPage from './pages/OnlineTuitionPage.jsx';
+
+import WorkshopsPage from './pages/WorkshopsPage.jsx';
+import StoriesPage from './pages/StoriesPage.jsx';
+import InternshipPage from './pages/InternshipPage.jsx';
+import GalleryPage from './pages/GalleryPage.jsx';
+
 import ContactPage from './pages/ContactPage.jsx';
 
 export default function App() {
@@ -16,11 +26,25 @@ export default function App() {
       <Header />
       <main className="flex-grow">
         <Routes>
+          {/* We */}
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/vision-mission" element={<VisionMissionPage />} />
+
+          {/* Empower */}
           <Route path="/empower/future-ready-school" element={<FutureReadySchoolPage />} />
           <Route path="/empower/student-success" element={<StudentSuccessPage />} />
+          <Route path="/empower/psychometric" element={<PsychometricPage />} />
+          <Route path="/empower/scholarships" element={<ScholarshipsPage />} />
+          <Route path="/empower/online-tuition" element={<OnlineTuitionPage />} />
+
+          {/* Growth */}
+          <Route path="/growth/workshops" element={<WorkshopsPage />} />
+          <Route path="/growth/stories" element={<StoriesPage />} />
+          <Route path="/growth/internship" element={<InternshipPage />} />
+          <Route path="/growth/gallery" element={<GalleryPage />} />
+
+          {/* Contact */}
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
