@@ -1,7 +1,9 @@
 import React from 'react';
+import PageTransition from '../components/PageTransition';
 
 export default function AboutPage() {
   return (
+    <PageTransition>
     <div className="bg-slate-50 py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
@@ -39,5 +41,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

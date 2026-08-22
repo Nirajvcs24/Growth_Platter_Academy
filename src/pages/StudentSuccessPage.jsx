@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageTransition from '../components/PageTransition';
 
 export default function StudentSuccessPage() {
   const services = [
@@ -18,6 +19,7 @@ export default function StudentSuccessPage() {
   ];
 
   return (
+    <PageTransition>
     <div className="bg-white py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
@@ -50,5 +52,6 @@ export default function StudentSuccessPage() {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

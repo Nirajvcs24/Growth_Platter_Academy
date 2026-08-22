@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTransition from '../components/PageTransition';
 
 export default function VisionMissionPage() {
   const values = [
@@ -10,6 +11,7 @@ export default function VisionMissionPage() {
   ];
 
   return (
+    <PageTransition>
     <div className="bg-white py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold text-slate-900 text-center mb-16">
@@ -45,5 +47,6 @@ export default function VisionMissionPage() {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }

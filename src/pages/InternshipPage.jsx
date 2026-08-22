@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageTransition from '../components/PageTransition';
 
 export default function InternshipPage() {
   return (
+    <PageTransition>
     <div className="bg-white py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="text-[#0A7E8C] text-xs font-semibold uppercase tracking-widest block mb-2">
@@ -33,5 +35,6 @@ export default function InternshipPage() {
         </Link>
       </div>
     </div>
+    </PageTransition>
   );
 }
